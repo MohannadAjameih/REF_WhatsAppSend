@@ -95,13 +95,12 @@
       <AssemblyReference>System.Private.Uri</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="System_Get_PhoneNumber_Name" sap:VirtualizedContainerService.HintSize="449.6,328" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="System_Get_PhoneNumber_Name" sap:VirtualizedContainerService.HintSize="449.6,200" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
     <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[out_dtContacts]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="387.2,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Group1" WorkbookPath="[in_FilePath]" />
-    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[out_dtContacts]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="387.2,88" sap2010:WorkflowViewState.IdRef="ReadRange_2" SheetName="Text" WorkbookPath="[in_FilePath]" />
   </Sequence>
 </Activity>
