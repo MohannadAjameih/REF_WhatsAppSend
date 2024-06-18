@@ -132,8 +132,6 @@
                         <InArgument x:TypeArguments="x:String" x:Key="in_FilePath">
                           <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;FilePath&quot;).ToString" />
                         </InArgument>
-                        <OutArgument x:TypeArguments="x:String" x:Key="out_Name" />
-                        <InArgument x:TypeArguments="x:String" x:Key="out_PhoneNumber" />
                         <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_dtContacts">
                           <VisualBasicReference x:TypeArguments="sd:DataTable" ExpressionText="io_dt_TransactionData" />
                         </OutArgument>
