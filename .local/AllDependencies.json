@@ -83,6 +83,19 @@
           }
         }
       },
+      "HtmlAgilityPack/1.11.46": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/HtmlAgilityPack.dll": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        }
+      },
       "Markdig.Signed/0.21.1": {
         "type": "package",
         "compile": {
@@ -1117,6 +1130,34 @@
         "runtime": {
           "lib/netstandard2.0/Microsoft.VisualStudio.OLE.Interop.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Web.WebView2/1.0.1823.32": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.Web.WebView2.Core.dll": {
+            "related": ".xml"
+          },
+          "lib/netcoreapp3.0/Microsoft.Web.WebView2.WinForms.dll": {
+            "related": ".xml"
+          },
+          "lib/netcoreapp3.0/Microsoft.Web.WebView2.Wpf.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "build/_._": {}
+        },
+        "runtimeTargets": {
+          "runtimes/win-x64/native/_._": {
+            "assetType": "native",
+            "rid": "win-x64"
           }
         }
       },
@@ -4117,6 +4158,99 @@
           }
         }
       },
+      "UiPath.Form.Activities/23.10.6": {
+        "type": "package",
+        "dependencies": {
+          "System.Activities.ViewModels": "1.0.0-20230906.1",
+          "UiPath.Platform": "23.10.0",
+          "UiPath.Studio.Forms.Runtime": "23.10.6",
+          "UiPath.Telemetry.Client": "1.5.3"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/UiPath.Forms.Activities.Design.dll": {},
+          "lib/net6.0-windows7.0/UiPath.Forms.Activities.dll": {}
+        },
+        "resource": {
+          "lib/net6.0-windows7.0/de/UiPath.Forms.Activities.Design.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0-windows7.0/de/UiPath.Forms.Activities.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0-windows7.0/es-MX/UiPath.Forms.Activities.Design.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net6.0-windows7.0/es-MX/UiPath.Forms.Activities.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net6.0-windows7.0/es/UiPath.Forms.Activities.Design.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net6.0-windows7.0/es/UiPath.Forms.Activities.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net6.0-windows7.0/fr/UiPath.Forms.Activities.Design.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net6.0-windows7.0/fr/UiPath.Forms.Activities.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net6.0-windows7.0/ja/UiPath.Forms.Activities.Design.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net6.0-windows7.0/ja/UiPath.Forms.Activities.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net6.0-windows7.0/ko/UiPath.Forms.Activities.Design.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net6.0-windows7.0/ko/UiPath.Forms.Activities.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net6.0-windows7.0/pt-BR/UiPath.Forms.Activities.Design.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net6.0-windows7.0/pt-BR/UiPath.Forms.Activities.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net6.0-windows7.0/pt/UiPath.Forms.Activities.Design.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net6.0-windows7.0/pt/UiPath.Forms.Activities.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net6.0-windows7.0/ru/UiPath.Forms.Activities.Design.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net6.0-windows7.0/tr/UiPath.Forms.Activities.Design.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net6.0-windows7.0/tr/UiPath.Forms.Activities.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net6.0-windows7.0/zh-CN/UiPath.Forms.Activities.Design.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net6.0-windows7.0/zh-CN/UiPath.Forms.Activities.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net6.0-windows7.0/zh-TW/UiPath.Forms.Activities.Design.resources.dll": {
+            "locale": "zh-TW"
+          },
+          "lib/net6.0-windows7.0/zh-TW/UiPath.Forms.Activities.resources.dll": {
+            "locale": "zh-TW"
+          },
+          "lib/net6.0-windows7.0/zu/UiPath.Forms.Activities.Design.resources.dll": {
+            "locale": "zu"
+          },
+          "lib/net6.0-windows7.0/zu/UiPath.Forms.Activities.resources.dll": {
+            "locale": "zu"
+          }
+        }
+      },
       "UiPath.ImageProcessing/23.4.0": {
         "type": "package",
         "compile": {
@@ -4336,6 +4470,69 @@
           },
           "lib/net6.0-windows7.0/zh-CN/UiPath.Platform.resources.dll": {
             "locale": "zh-CN"
+          }
+        }
+      },
+      "UiPath.Studio.Forms.Runtime/23.10.6": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.11.46",
+          "Microsoft.Web.WebView2": "1.0.1823.32",
+          "System.IO.Abstractions": "3.0.10",
+          "UiPath.Platform": "23.10.0"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/UiPath.Studio.Forms.Runtime.dll": {}
+        },
+        "resource": {
+          "lib/net6.0-windows7.0/de/UiPath.Studio.Forms.Runtime.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0-windows7.0/es-MX/UiPath.Studio.Forms.Runtime.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net6.0-windows7.0/es/UiPath.Studio.Forms.Runtime.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net6.0-windows7.0/fr/UiPath.Studio.Forms.Runtime.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net6.0-windows7.0/ja/UiPath.Studio.Forms.Runtime.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net6.0-windows7.0/ko/UiPath.Studio.Forms.Runtime.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net6.0-windows7.0/pt-BR/UiPath.Studio.Forms.Runtime.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net6.0-windows7.0/pt/UiPath.Studio.Forms.Runtime.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net6.0-windows7.0/ru/UiPath.Studio.Forms.Runtime.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net6.0-windows7.0/tr/UiPath.Studio.Forms.Runtime.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net6.0-windows7.0/zh-CN/UiPath.Studio.Forms.Runtime.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net6.0-windows7.0/zh-TW/UiPath.Studio.Forms.Runtime.resources.dll": {
+            "locale": "zh-TW"
+          },
+          "lib/net6.0-windows7.0/zu/UiPath.Studio.Forms.Runtime.resources.dll": {
+            "locale": "zu"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
           }
         }
       },
@@ -5166,6 +5363,19 @@
         "runtime": {
           "lib/netstandard2.0/ExcelNumberFormat.dll": {
             "related": ".xml"
+          }
+        }
+      },
+      "HtmlAgilityPack/1.11.46": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/_._": {
+            "related": ".deps.json;.pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/HtmlAgilityPack.dll": {
+            "related": ".deps.json;.pdb;.xml"
           }
         }
       },
@@ -6065,6 +6275,31 @@
           "lib/netstandard2.0/Microsoft.VisualStudio.OLE.Interop.dll": {
             "related": ".xml"
           }
+        }
+      },
+      "Microsoft.Web.WebView2/1.0.1823.32": {
+        "type": "package",
+        "compile": {
+          "lib/netcoreapp3.0/_._": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netcoreapp3.0/Microsoft.Web.WebView2.Core.dll": {
+            "related": ".xml"
+          },
+          "lib/netcoreapp3.0/Microsoft.Web.WebView2.WinForms.dll": {
+            "related": ".xml"
+          },
+          "lib/netcoreapp3.0/Microsoft.Web.WebView2.Wpf.dll": {
+            "related": ".xml"
+          }
+        },
+        "native": {
+          "runtimes/win-x64/native/_._": {}
+        },
+        "build": {
+          "build/_._": {}
         }
       },
       "Microsoft.Win32.Primitives/4.3.0": {
@@ -9059,6 +9294,99 @@
           }
         }
       },
+      "UiPath.Form.Activities/23.10.6": {
+        "type": "package",
+        "dependencies": {
+          "System.Activities.ViewModels": "1.0.0-20230906.1",
+          "UiPath.Platform": "23.10.0",
+          "UiPath.Studio.Forms.Runtime": "23.10.6",
+          "UiPath.Telemetry.Client": "1.5.3"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/UiPath.Forms.Activities.Design.dll": {},
+          "lib/net6.0-windows7.0/UiPath.Forms.Activities.dll": {}
+        },
+        "resource": {
+          "lib/net6.0-windows7.0/de/UiPath.Forms.Activities.Design.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0-windows7.0/de/UiPath.Forms.Activities.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0-windows7.0/es-MX/UiPath.Forms.Activities.Design.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net6.0-windows7.0/es-MX/UiPath.Forms.Activities.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net6.0-windows7.0/es/UiPath.Forms.Activities.Design.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net6.0-windows7.0/es/UiPath.Forms.Activities.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net6.0-windows7.0/fr/UiPath.Forms.Activities.Design.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net6.0-windows7.0/fr/UiPath.Forms.Activities.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net6.0-windows7.0/ja/UiPath.Forms.Activities.Design.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net6.0-windows7.0/ja/UiPath.Forms.Activities.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net6.0-windows7.0/ko/UiPath.Forms.Activities.Design.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net6.0-windows7.0/ko/UiPath.Forms.Activities.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net6.0-windows7.0/pt-BR/UiPath.Forms.Activities.Design.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net6.0-windows7.0/pt-BR/UiPath.Forms.Activities.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net6.0-windows7.0/pt/UiPath.Forms.Activities.Design.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net6.0-windows7.0/pt/UiPath.Forms.Activities.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net6.0-windows7.0/ru/UiPath.Forms.Activities.Design.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net6.0-windows7.0/tr/UiPath.Forms.Activities.Design.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net6.0-windows7.0/tr/UiPath.Forms.Activities.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net6.0-windows7.0/zh-CN/UiPath.Forms.Activities.Design.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net6.0-windows7.0/zh-CN/UiPath.Forms.Activities.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net6.0-windows7.0/zh-TW/UiPath.Forms.Activities.Design.resources.dll": {
+            "locale": "zh-TW"
+          },
+          "lib/net6.0-windows7.0/zh-TW/UiPath.Forms.Activities.resources.dll": {
+            "locale": "zh-TW"
+          },
+          "lib/net6.0-windows7.0/zu/UiPath.Forms.Activities.Design.resources.dll": {
+            "locale": "zu"
+          },
+          "lib/net6.0-windows7.0/zu/UiPath.Forms.Activities.resources.dll": {
+            "locale": "zu"
+          }
+        }
+      },
       "UiPath.ImageProcessing/23.4.0": {
         "type": "package",
         "compile": {
@@ -9278,6 +9606,69 @@
           },
           "lib/net6.0-windows7.0/zh-CN/UiPath.Platform.resources.dll": {
             "locale": "zh-CN"
+          }
+        }
+      },
+      "UiPath.Studio.Forms.Runtime/23.10.6": {
+        "type": "package",
+        "dependencies": {
+          "HtmlAgilityPack": "1.11.46",
+          "Microsoft.Web.WebView2": "1.0.1823.32",
+          "System.IO.Abstractions": "3.0.10",
+          "UiPath.Platform": "23.10.0"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/_._": {}
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/UiPath.Studio.Forms.Runtime.dll": {}
+        },
+        "resource": {
+          "lib/net6.0-windows7.0/de/UiPath.Studio.Forms.Runtime.resources.dll": {
+            "locale": "de"
+          },
+          "lib/net6.0-windows7.0/es-MX/UiPath.Studio.Forms.Runtime.resources.dll": {
+            "locale": "es-MX"
+          },
+          "lib/net6.0-windows7.0/es/UiPath.Studio.Forms.Runtime.resources.dll": {
+            "locale": "es"
+          },
+          "lib/net6.0-windows7.0/fr/UiPath.Studio.Forms.Runtime.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/net6.0-windows7.0/ja/UiPath.Studio.Forms.Runtime.resources.dll": {
+            "locale": "ja"
+          },
+          "lib/net6.0-windows7.0/ko/UiPath.Studio.Forms.Runtime.resources.dll": {
+            "locale": "ko"
+          },
+          "lib/net6.0-windows7.0/pt-BR/UiPath.Studio.Forms.Runtime.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/net6.0-windows7.0/pt/UiPath.Studio.Forms.Runtime.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/net6.0-windows7.0/ru/UiPath.Studio.Forms.Runtime.resources.dll": {
+            "locale": "ru"
+          },
+          "lib/net6.0-windows7.0/tr/UiPath.Studio.Forms.Runtime.resources.dll": {
+            "locale": "tr"
+          },
+          "lib/net6.0-windows7.0/zh-CN/UiPath.Studio.Forms.Runtime.resources.dll": {
+            "locale": "zh-CN"
+          },
+          "lib/net6.0-windows7.0/zh-TW/UiPath.Studio.Forms.Runtime.resources.dll": {
+            "locale": "zh-TW"
+          },
+          "lib/net6.0-windows7.0/zu/UiPath.Studio.Forms.Runtime.resources.dll": {
+            "locale": "zu"
+          }
+        },
+        "contentFiles": {
+          "contentFiles/any/any/_._": {
+            "buildAction": "None",
+            "codeLanguage": "any",
+            "copyToOutput": false
           }
         }
       },
@@ -10126,6 +10517,54 @@
         "lib/netstandard1.0/ExcelNumberFormat.xml",
         "lib/netstandard2.0/ExcelNumberFormat.dll",
         "lib/netstandard2.0/ExcelNumberFormat.xml"
+      ]
+    },
+    "HtmlAgilityPack/1.11.46": {
+      "sha512": "dLMn4EVfJBHWmWK4Uh0XGD76FPLHI0qr2Tm0s1m/xmgiHb1JUb9zB8AzO8HtrkBBlMN6JfCUBYddhqC0hZNR+g==",
+      "type": "package",
+      "path": "htmlagilitypack/1.11.46",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "htmlagilitypack.1.11.46.nupkg.sha512",
+        "htmlagilitypack.nuspec",
+        "lib/Net35/HtmlAgilityPack.dll",
+        "lib/Net35/HtmlAgilityPack.pdb",
+        "lib/Net35/HtmlAgilityPack.xml",
+        "lib/Net40-client/HtmlAgilityPack.dll",
+        "lib/Net40-client/HtmlAgilityPack.pdb",
+        "lib/Net40-client/HtmlAgilityPack.xml",
+        "lib/Net40/HtmlAgilityPack.XML",
+        "lib/Net40/HtmlAgilityPack.dll",
+        "lib/Net40/HtmlAgilityPack.pdb",
+        "lib/Net45/HtmlAgilityPack.XML",
+        "lib/Net45/HtmlAgilityPack.dll",
+        "lib/Net45/HtmlAgilityPack.pdb",
+        "lib/NetCore45/HtmlAgilityPack.XML",
+        "lib/NetCore45/HtmlAgilityPack.dll",
+        "lib/NetCore45/HtmlAgilityPack.pdb",
+        "lib/netstandard1.3/HtmlAgilityPack.deps.json",
+        "lib/netstandard1.3/HtmlAgilityPack.dll",
+        "lib/netstandard1.3/HtmlAgilityPack.pdb",
+        "lib/netstandard1.3/HtmlAgilityPack.xml",
+        "lib/netstandard1.6/HtmlAgilityPack.deps.json",
+        "lib/netstandard1.6/HtmlAgilityPack.dll",
+        "lib/netstandard1.6/HtmlAgilityPack.pdb",
+        "lib/netstandard1.6/HtmlAgilityPack.xml",
+        "lib/netstandard2.0/HtmlAgilityPack.deps.json",
+        "lib/netstandard2.0/HtmlAgilityPack.dll",
+        "lib/netstandard2.0/HtmlAgilityPack.pdb",
+        "lib/netstandard2.0/HtmlAgilityPack.xml",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.XML",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.dll",
+        "lib/portable-net45+netcore45+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.pdb",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.XML",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.dll",
+        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid+MonoTouch/HtmlAgilityPack.pdb",
+        "lib/uap10.0/HtmlAgilityPack.XML",
+        "lib/uap10.0/HtmlAgilityPack.dll",
+        "lib/uap10.0/HtmlAgilityPack.pdb",
+        "lib/uap10.0/HtmlAgilityPack.pri"
       ]
     },
     "Markdig.Signed/0.21.1": {
@@ -11764,6 +12203,96 @@
         "lib/netstandard2.0/Microsoft.VisualStudio.OLE.Interop.xml",
         "microsoft.visualstudio.ole.interop.16.7.30328.74.nupkg.sha512",
         "microsoft.visualstudio.ole.interop.nuspec"
+      ]
+    },
+    "Microsoft.Web.WebView2/1.0.1823.32": {
+      "sha512": "ppRcWBUNggFIqyJp7PfgS4Oe8/7yli/mHcTNDOaqo3ZzJWnv9AOr0WE9ceEP5SPs1M7CQ3QvdGMR7KNz0v09EA==",
+      "type": "package",
+      "path": "microsoft.web.webview2/1.0.1823.32",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "NOTICE.txt",
+        "WebView2.idl",
+        "WebView2.tlb",
+        "build/Common.targets",
+        "build/Microsoft.Web.WebView2.targets",
+        "build/WebView2Rules.Project.xml",
+        "build/native/Microsoft.Web.WebView2.targets",
+        "build/native/arm64/WebView2Loader.dll",
+        "build/native/arm64/WebView2Loader.dll.lib",
+        "build/native/arm64/WebView2LoaderStatic.lib",
+        "build/native/include-winrt/WebView2Interop.h",
+        "build/native/include-winrt/WebView2Interop.idl",
+        "build/native/include-winrt/WebView2Interop.tlb",
+        "build/native/include/WebView2.h",
+        "build/native/include/WebView2EnvironmentOptions.h",
+        "build/native/x64/WebView2Loader.dll",
+        "build/native/x64/WebView2Loader.dll.lib",
+        "build/native/x64/WebView2LoaderStatic.lib",
+        "build/native/x86/WebView2Loader.dll",
+        "build/native/x86/WebView2Loader.dll.lib",
+        "build/native/x86/WebView2LoaderStatic.lib",
+        "build/wv2winrt.targets",
+        "lib/Microsoft.Web.WebView2.Core.winmd",
+        "lib/net45/Microsoft.Web.WebView2.Core.dll",
+        "lib/net45/Microsoft.Web.WebView2.Core.xml",
+        "lib/net45/Microsoft.Web.WebView2.WinForms.dll",
+        "lib/net45/Microsoft.Web.WebView2.WinForms.xml",
+        "lib/net45/Microsoft.Web.WebView2.Wpf.dll",
+        "lib/net45/Microsoft.Web.WebView2.Wpf.xml",
+        "lib/netcoreapp3.0/Microsoft.Web.WebView2.Core.dll",
+        "lib/netcoreapp3.0/Microsoft.Web.WebView2.Core.xml",
+        "lib/netcoreapp3.0/Microsoft.Web.WebView2.WinForms.dll",
+        "lib/netcoreapp3.0/Microsoft.Web.WebView2.WinForms.xml",
+        "lib/netcoreapp3.0/Microsoft.Web.WebView2.Wpf.dll",
+        "lib/netcoreapp3.0/Microsoft.Web.WebView2.Wpf.xml",
+        "microsoft.web.webview2.1.0.1823.32.nupkg.sha512",
+        "microsoft.web.webview2.nuspec",
+        "runtimes/win-arm64/native/WebView2Loader.dll",
+        "runtimes/win-arm64/native_uap/Microsoft.Web.WebView2.Core.dll",
+        "runtimes/win-x64/native/WebView2Loader.dll",
+        "runtimes/win-x64/native_uap/Microsoft.Web.WebView2.Core.dll",
+        "runtimes/win-x86/native/WebView2Loader.dll",
+        "runtimes/win-x86/native_uap/Microsoft.Web.WebView2.Core.dll",
+        "tools/VisualStudioToolsManifest.xml",
+        "tools/wv2winrt/Antlr3.Runtime.dll",
+        "tools/wv2winrt/Antlr4.StringTemplate.dll",
+        "tools/wv2winrt/System.Buffers.dll",
+        "tools/wv2winrt/System.CommandLine.DragonFruit.dll",
+        "tools/wv2winrt/System.CommandLine.Rendering.dll",
+        "tools/wv2winrt/System.CommandLine.dll",
+        "tools/wv2winrt/System.Memory.dll",
+        "tools/wv2winrt/System.Numerics.Vectors.dll",
+        "tools/wv2winrt/System.Runtime.CompilerServices.Unsafe.dll",
+        "tools/wv2winrt/concrt140_app.dll",
+        "tools/wv2winrt/cs/System.CommandLine.resources.dll",
+        "tools/wv2winrt/de/System.CommandLine.resources.dll",
+        "tools/wv2winrt/es/System.CommandLine.resources.dll",
+        "tools/wv2winrt/fr/System.CommandLine.resources.dll",
+        "tools/wv2winrt/it/System.CommandLine.resources.dll",
+        "tools/wv2winrt/ja/System.CommandLine.resources.dll",
+        "tools/wv2winrt/ko/System.CommandLine.resources.dll",
+        "tools/wv2winrt/msvcp140_1_app.dll",
+        "tools/wv2winrt/msvcp140_2_app.dll",
+        "tools/wv2winrt/msvcp140_app.dll",
+        "tools/wv2winrt/pl/System.CommandLine.resources.dll",
+        "tools/wv2winrt/pt-BR/System.CommandLine.resources.dll",
+        "tools/wv2winrt/ru/System.CommandLine.resources.dll",
+        "tools/wv2winrt/tr/System.CommandLine.resources.dll",
+        "tools/wv2winrt/vcamp140_app.dll",
+        "tools/wv2winrt/vccorlib140_app.dll",
+        "tools/wv2winrt/vcomp140_app.dll",
+        "tools/wv2winrt/vcruntime140_app.dll",
+        "tools/wv2winrt/winrt_winmd.dll",
+        "tools/wv2winrt/winrt_winmd.winmd",
+        "tools/wv2winrt/wv2winrt.exe",
+        "tools/wv2winrt/wv2winrt.exe.config",
+        "tools/wv2winrt/wv2winrt.xml",
+        "tools/wv2winrt/zh-Hans/System.CommandLine.resources.dll",
+        "tools/wv2winrt/zh-Hant/System.CommandLine.resources.dll"
       ]
     },
     "Microsoft.Win32.Primitives/4.3.0": {
@@ -18519,6 +19048,44 @@
         "uipath.excel.activities.nuspec"
       ]
     },
+    "UiPath.Form.Activities/23.10.6": {
+      "sha512": "1XArE+LohBgfJhPCIi0eETXAU2lNkVrEz8dj1BrCjdZhlirvEaTOTAOew/+i+PRdFnYud8PRR76wX3ftHzA0Mw==",
+      "type": "package",
+      "path": "uipath.form.activities/23.10.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0-windows7.0/UiPath.Forms.Activities.Design.dll",
+        "lib/net6.0-windows7.0/UiPath.Forms.Activities.dll",
+        "lib/net6.0-windows7.0/de/UiPath.Forms.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/de/UiPath.Forms.Activities.resources.dll",
+        "lib/net6.0-windows7.0/es-MX/UiPath.Forms.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/es-MX/UiPath.Forms.Activities.resources.dll",
+        "lib/net6.0-windows7.0/es/UiPath.Forms.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/es/UiPath.Forms.Activities.resources.dll",
+        "lib/net6.0-windows7.0/fr/UiPath.Forms.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/fr/UiPath.Forms.Activities.resources.dll",
+        "lib/net6.0-windows7.0/ja/UiPath.Forms.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/ja/UiPath.Forms.Activities.resources.dll",
+        "lib/net6.0-windows7.0/ko/UiPath.Forms.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/ko/UiPath.Forms.Activities.resources.dll",
+        "lib/net6.0-windows7.0/pt-BR/UiPath.Forms.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/pt-BR/UiPath.Forms.Activities.resources.dll",
+        "lib/net6.0-windows7.0/pt/UiPath.Forms.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/pt/UiPath.Forms.Activities.resources.dll",
+        "lib/net6.0-windows7.0/ru/UiPath.Forms.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/tr/UiPath.Forms.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/tr/UiPath.Forms.Activities.resources.dll",
+        "lib/net6.0-windows7.0/zh-CN/UiPath.Forms.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/zh-CN/UiPath.Forms.Activities.resources.dll",
+        "lib/net6.0-windows7.0/zh-TW/UiPath.Forms.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/zh-TW/UiPath.Forms.Activities.resources.dll",
+        "lib/net6.0-windows7.0/zu/UiPath.Forms.Activities.Design.resources.dll",
+        "lib/net6.0-windows7.0/zu/UiPath.Forms.Activities.resources.dll",
+        "uipath.form.activities.23.10.6.nupkg.sha512",
+        "uipath.form.activities.nuspec"
+      ]
+    },
     "UiPath.ImageProcessing/23.4.0": {
       "sha512": "riU8a5oAisvhhxciV++7pmsTNWcGtg2AiytNu+ttz7IZiCz9VHS1jlh5uzKvkUlDCgtShuExSZ5eOEVlfjTWwQ==",
       "type": "package",
@@ -18954,6 +19521,443 @@
         "lib/net6.0/zh-CN/UiPath.Platform.resources.dll",
         "uipath.platform.24.2.0.nupkg.sha512",
         "uipath.platform.nuspec"
+      ]
+    },
+    "UiPath.Studio.Forms.Runtime/23.10.6": {
+      "sha512": "ogQOd1NoHKMyBI0s2VfalKySthwGnJNuQfWMrlIhPs49cBi0+TZPlvXIWJJJz2iq2XlJL2sWZgu/ynuy2eHbXQ==",
+      "type": "package",
+      "path": "uipath.studio.forms.runtime/23.10.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "contentFiles/any/any/dist/ace/ace.js",
+        "contentFiles/any/any/dist/ace/ext-beautify.js",
+        "contentFiles/any/any/dist/ace/ext-elastic_tabstops_lite.js",
+        "contentFiles/any/any/dist/ace/ext-emmet.js",
+        "contentFiles/any/any/dist/ace/ext-error_marker.js",
+        "contentFiles/any/any/dist/ace/ext-keybinding_menu.js",
+        "contentFiles/any/any/dist/ace/ext-language_tools.js",
+        "contentFiles/any/any/dist/ace/ext-linking.js",
+        "contentFiles/any/any/dist/ace/ext-modelist.js",
+        "contentFiles/any/any/dist/ace/ext-options.js",
+        "contentFiles/any/any/dist/ace/ext-rtl.js",
+        "contentFiles/any/any/dist/ace/ext-searchbox.js",
+        "contentFiles/any/any/dist/ace/ext-settings_menu.js",
+        "contentFiles/any/any/dist/ace/ext-spellcheck.js",
+        "contentFiles/any/any/dist/ace/ext-split.js",
+        "contentFiles/any/any/dist/ace/ext-static_highlight.js",
+        "contentFiles/any/any/dist/ace/ext-statusbar.js",
+        "contentFiles/any/any/dist/ace/ext-textarea.js",
+        "contentFiles/any/any/dist/ace/ext-themelist.js",
+        "contentFiles/any/any/dist/ace/ext-whitespace.js",
+        "contentFiles/any/any/dist/ace/mode-html.js",
+        "contentFiles/any/any/dist/ace/mode-html_elixir.js",
+        "contentFiles/any/any/dist/ace/mode-html_ruby.js",
+        "contentFiles/any/any/dist/ace/mode-javascript.js",
+        "contentFiles/any/any/dist/ace/mode-json.js",
+        "contentFiles/any/any/dist/ace/mode-rhtml.js",
+        "contentFiles/any/any/dist/ace/theme-xcode.js",
+        "contentFiles/any/any/dist/ace/worker-html.js",
+        "contentFiles/any/any/dist/ace/worker-javascript.js",
+        "contentFiles/any/any/dist/ace/worker-json.js",
+        "contentFiles/any/any/dist/aggrid/ag-grid-community.min.js",
+        "contentFiles/any/any/dist/aggrid/styles/ag-grid.min.css",
+        "contentFiles/any/any/dist/aggrid/styles/ag-theme-alpine.min.css",
+        "contentFiles/any/any/dist/bootstrap.min.css",
+        "contentFiles/any/any/dist/bootstrap.min.js",
+        "contentFiles/any/any/dist/ckeditor/ckeditor.js",
+        "contentFiles/any/any/dist/ckeditor/translations/af.js",
+        "contentFiles/any/any/dist/ckeditor/translations/ar.js",
+        "contentFiles/any/any/dist/ckeditor/translations/ast.js",
+        "contentFiles/any/any/dist/ckeditor/translations/az.js",
+        "contentFiles/any/any/dist/ckeditor/translations/bg.js",
+        "contentFiles/any/any/dist/ckeditor/translations/ca.js",
+        "contentFiles/any/any/dist/ckeditor/translations/cs.js",
+        "contentFiles/any/any/dist/ckeditor/translations/da.js",
+        "contentFiles/any/any/dist/ckeditor/translations/de-ch.js",
+        "contentFiles/any/any/dist/ckeditor/translations/de.js",
+        "contentFiles/any/any/dist/ckeditor/translations/el.js",
+        "contentFiles/any/any/dist/ckeditor/translations/en-au.js",
+        "contentFiles/any/any/dist/ckeditor/translations/en-gb.js",
+        "contentFiles/any/any/dist/ckeditor/translations/eo.js",
+        "contentFiles/any/any/dist/ckeditor/translations/es.js",
+        "contentFiles/any/any/dist/ckeditor/translations/et.js",
+        "contentFiles/any/any/dist/ckeditor/translations/eu.js",
+        "contentFiles/any/any/dist/ckeditor/translations/fa.js",
+        "contentFiles/any/any/dist/ckeditor/translations/fi.js",
+        "contentFiles/any/any/dist/ckeditor/translations/fr.js",
+        "contentFiles/any/any/dist/ckeditor/translations/gl.js",
+        "contentFiles/any/any/dist/ckeditor/translations/gu.js",
+        "contentFiles/any/any/dist/ckeditor/translations/he.js",
+        "contentFiles/any/any/dist/ckeditor/translations/hr.js",
+        "contentFiles/any/any/dist/ckeditor/translations/hu.js",
+        "contentFiles/any/any/dist/ckeditor/translations/id.js",
+        "contentFiles/any/any/dist/ckeditor/translations/it.js",
+        "contentFiles/any/any/dist/ckeditor/translations/ja.js",
+        "contentFiles/any/any/dist/ckeditor/translations/km.js",
+        "contentFiles/any/any/dist/ckeditor/translations/kn.js",
+        "contentFiles/any/any/dist/ckeditor/translations/ko.js",
+        "contentFiles/any/any/dist/ckeditor/translations/ku.js",
+        "contentFiles/any/any/dist/ckeditor/translations/lt.js",
+        "contentFiles/any/any/dist/ckeditor/translations/lv.js",
+        "contentFiles/any/any/dist/ckeditor/translations/ms.js",
+        "contentFiles/any/any/dist/ckeditor/translations/nb.js",
+        "contentFiles/any/any/dist/ckeditor/translations/ne.js",
+        "contentFiles/any/any/dist/ckeditor/translations/nl.js",
+        "contentFiles/any/any/dist/ckeditor/translations/no.js",
+        "contentFiles/any/any/dist/ckeditor/translations/oc.js",
+        "contentFiles/any/any/dist/ckeditor/translations/pl.js",
+        "contentFiles/any/any/dist/ckeditor/translations/pt-br.js",
+        "contentFiles/any/any/dist/ckeditor/translations/pt.js",
+        "contentFiles/any/any/dist/ckeditor/translations/ro.js",
+        "contentFiles/any/any/dist/ckeditor/translations/ru.js",
+        "contentFiles/any/any/dist/ckeditor/translations/si.js",
+        "contentFiles/any/any/dist/ckeditor/translations/sk.js",
+        "contentFiles/any/any/dist/ckeditor/translations/sl.js",
+        "contentFiles/any/any/dist/ckeditor/translations/sq.js",
+        "contentFiles/any/any/dist/ckeditor/translations/sr-latn.js",
+        "contentFiles/any/any/dist/ckeditor/translations/sr.js",
+        "contentFiles/any/any/dist/ckeditor/translations/sv.js",
+        "contentFiles/any/any/dist/ckeditor/translations/th.js",
+        "contentFiles/any/any/dist/ckeditor/translations/tr.js",
+        "contentFiles/any/any/dist/ckeditor/translations/tt.js",
+        "contentFiles/any/any/dist/ckeditor/translations/ug.js",
+        "contentFiles/any/any/dist/ckeditor/translations/uk.js",
+        "contentFiles/any/any/dist/ckeditor/translations/vi.js",
+        "contentFiles/any/any/dist/ckeditor/translations/zh-cn.js",
+        "contentFiles/any/any/dist/ckeditor/translations/zh.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/index.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/default.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-ar-dz.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-ar.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-at.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-az.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-be.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-bg.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-bn.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-bs.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-cat.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-ckb.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-cs.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-cy.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-da.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-de.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-eo.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-es.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-et.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-fa.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-fi.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-fo.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-fr.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-ga.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-gr.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-he.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-hi.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-hr.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-hu.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-hy.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-id.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-is.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-it.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-ja.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-ka.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-km.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-ko.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-kz.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-lt.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-lv.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-mk.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-mn.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-ms.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-my.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-nl.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-nn.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-no.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-pa.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-pl.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-pt.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-ro.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-ru.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-si.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-sk.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-sl.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-sq.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-sr-cyr.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-sr.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-sv.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-th.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-tr.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-uk.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-uz.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-uz_latn.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-vn.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-zh-tw.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/flatpickr-zh.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/l10n/index.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/plugins/confirmDate/confirmDate.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/plugins/labelPlugin/labelPlugin.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/plugins/minMaxTimePlugin.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/plugins/momentPlugin.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/plugins/monthSelect/index.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/plugins/rangePlugin.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/plugins/scrollPlugin.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/plugins/weekSelect/weekSelect.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/types/globals.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/types/instance.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/types/locale.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/types/options.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/utils/dates.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/utils/dom.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/utils/formatting.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/utils/index.js",
+        "contentFiles/any/any/dist/flatpickr-formio/esm/utils/polyfills.js",
+        "contentFiles/any/any/dist/flatpickr-formio/flatpickr.css",
+        "contentFiles/any/any/dist/flatpickr-formio/flatpickr.js",
+        "contentFiles/any/any/dist/flatpickr-formio/flatpickr.min.css",
+        "contentFiles/any/any/dist/flatpickr-formio/flatpickr.min.js",
+        "contentFiles/any/any/dist/flatpickr-formio/ie.css",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/default.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/default.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-ar-dz.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-ar-dz.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-ar.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-ar.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-at.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-at.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-az.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-az.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-be.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-be.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-bg.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-bg.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-bn.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-bn.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-bs.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-bs.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-cat.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-cat.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-ckb.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-ckb.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-cs.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-cs.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-cy.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-cy.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-da.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-da.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-de.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-de.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-eo.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-eo.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-es.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-es.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-et.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-et.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-fa.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-fa.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-fi.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-fi.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-fo.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-fo.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-fr.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-fr.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-ga.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-ga.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-gr.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-gr.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-he.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-he.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-hi.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-hi.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-hr.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-hr.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-hu.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-hu.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-hy.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-hy.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-id.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-id.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-is.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-is.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-it.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-it.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-ja.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-ja.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-ka.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-ka.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-km.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-km.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-ko.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-ko.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-kz.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-kz.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-lt.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-lt.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-lv.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-lv.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-mk.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-mk.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-mn.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-mn.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-ms.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-ms.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-my.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-my.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-nl.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-nl.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-nn.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-nn.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-no.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-no.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-pa.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-pa.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-pl.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-pl.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-pt.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-pt.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-ro.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-ro.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-ru.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-ru.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-si.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-si.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-sk.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-sk.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-sl.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-sl.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-sq.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-sq.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-sr-cyr.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-sr-cyr.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-sr.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-sr.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-sv.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-sv.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-th.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-th.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-tr.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-tr.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-uk.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-uk.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-uz.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-uz.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-uz_latn.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-uz_latn.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-vn.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-vn.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-zh-tw.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-zh-tw.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-zh.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/flatpickr-zh.js",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/index.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/l10n/index.js",
+        "contentFiles/any/any/dist/flatpickr-formio/plugins/confirmDate/confirmDate.css",
+        "contentFiles/any/any/dist/flatpickr-formio/plugins/confirmDate/confirmDate.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/plugins/confirmDate/confirmDate.js",
+        "contentFiles/any/any/dist/flatpickr-formio/plugins/labelPlugin/labelPlugin.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/plugins/labelPlugin/labelPlugin.js",
+        "contentFiles/any/any/dist/flatpickr-formio/plugins/minMaxTimePlugin.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/plugins/minMaxTimePlugin.js",
+        "contentFiles/any/any/dist/flatpickr-formio/plugins/momentPlugin.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/plugins/momentPlugin.js",
+        "contentFiles/any/any/dist/flatpickr-formio/plugins/monthSelect/index.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/plugins/monthSelect/index.js",
+        "contentFiles/any/any/dist/flatpickr-formio/plugins/monthSelect/style.css",
+        "contentFiles/any/any/dist/flatpickr-formio/plugins/rangePlugin.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/plugins/rangePlugin.js",
+        "contentFiles/any/any/dist/flatpickr-formio/plugins/scrollPlugin.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/plugins/scrollPlugin.js",
+        "contentFiles/any/any/dist/flatpickr-formio/plugins/weekSelect/weekSelect.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/plugins/weekSelect/weekSelect.js",
+        "contentFiles/any/any/dist/flatpickr-formio/themes/airbnb.css",
+        "contentFiles/any/any/dist/flatpickr-formio/themes/confetti.css",
+        "contentFiles/any/any/dist/flatpickr-formio/themes/dark.css",
+        "contentFiles/any/any/dist/flatpickr-formio/themes/light.css",
+        "contentFiles/any/any/dist/flatpickr-formio/themes/material_blue.css",
+        "contentFiles/any/any/dist/flatpickr-formio/themes/material_green.css",
+        "contentFiles/any/any/dist/flatpickr-formio/themes/material_orange.css",
+        "contentFiles/any/any/dist/flatpickr-formio/themes/material_red.css",
+        "contentFiles/any/any/dist/flatpickr-formio/types/globals.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/types/instance.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/types/locale.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/types/options.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/typings.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/utils/dates.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/utils/dom.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/utils/formatting.d.ts",
+        "contentFiles/any/any/dist/flatpickr-formio/utils/index.d.ts",
+        "contentFiles/any/any/dist/fonts/font-awesome.min.css",
+        "contentFiles/any/any/dist/fonts/fontawesome-webfont.woff2",
+        "contentFiles/any/any/dist/formio/formio.full.min.css",
+        "contentFiles/any/any/dist/formio/formio.full.min.js",
+        "contentFiles/any/any/dist/jquery.min.js",
+        "contentFiles/any/any/dist/moment-timezone/data/meta/latest.json",
+        "contentFiles/any/any/dist/moment-timezone/data/packed/latest.json",
+        "contentFiles/any/any/dist/moment-timezone/moment-timezone.min.js",
+        "contentFiles/any/any/dist/moment/moment.min.js",
+        "contentFiles/any/any/dist/popperjs/popper-utils.min.js",
+        "contentFiles/any/any/dist/popperjs/popper.min.js",
+        "contentFiles/any/any/dist/require.js",
+        "contentFiles/any/any/dist/themes/cosmo/bootstrap.min.css",
+        "contentFiles/any/any/dist/themes/cyborg/bootstrap.min.css",
+        "contentFiles/any/any/dist/themes/default.custom.css",
+        "contentFiles/any/any/dist/themes/designer.css",
+        "contentFiles/any/any/dist/themes/flatly/bootstrap.min.css",
+        "contentFiles/any/any/dist/themes/main.css",
+        "contentFiles/any/any/dist/themes/override-dark.custom.css",
+        "contentFiles/any/any/dist/themes/override.custom.css",
+        "contentFiles/any/any/dist/themes/sandstone/bootstrap.min.css",
+        "contentFiles/any/any/dist/themes/tooltip.css",
+        "contentFiles/any/any/src/html/formio.host.html",
+        "contentFiles/any/any/src/ts/BaseController.js",
+        "contentFiles/any/any/src/ts/BaseController.js.map",
+        "contentFiles/any/any/src/ts/FormApi.js",
+        "contentFiles/any/any/src/ts/FormApi.js.map",
+        "contentFiles/any/any/src/ts/FormIoHost.js",
+        "contentFiles/any/any/src/ts/FormIoHost.js.map",
+        "contentFiles/any/any/src/ts/HostBootstraper.js",
+        "contentFiles/any/any/src/ts/HostBootstraper.js.map",
+        "contentFiles/any/any/src/ts/HtmlApi.js",
+        "contentFiles/any/any/src/ts/HtmlApi.js.map",
+        "contentFiles/any/any/src/ts/Messaging/MessageConstants.js",
+        "contentFiles/any/any/src/ts/Messaging/MessageConstants.js.map",
+        "contentFiles/any/any/src/ts/TargetApi.js",
+        "contentFiles/any/any/src/ts/TargetApi.js.map",
+        "contentFiles/any/any/src/ts/custom_components/DataTable.js",
+        "contentFiles/any/any/src/ts/custom_components/DataTable.js.map",
+        "contentFiles/any/any/src/ts/custom_components/Label.js",
+        "contentFiles/any/any/src/ts/custom_components/Label.js.map",
+        "contentFiles/any/any/src/ts/generated/BrowserPlatform/WebView2/UiPathMessagingWebview2.js",
+        "contentFiles/any/any/src/ts/generated/BrowserPlatform/WebView2/UiPathMessagingWebview2.js.map",
+        "contentFiles/any/any/src/ts/generated/FormsFramework/FormIo/FormIoConstants.js",
+        "contentFiles/any/any/src/ts/generated/FormsFramework/FormIo/FormIoConstants.js.map",
+        "contentFiles/any/any/src/ts/generated/FormsFramework/FormIo/FormIoThemes.js",
+        "contentFiles/any/any/src/ts/generated/FormsFramework/FormIo/FormIoThemes.js.map",
+        "contentFiles/any/any/src/ts/generated/FormsFramework/FormIo/FormIoUtilsCommon.js",
+        "contentFiles/any/any/src/ts/generated/FormsFramework/FormIo/FormIoUtilsCommon.js.map",
+        "contentFiles/any/any/src/ts/generated/Messaging/CommonMessageConstants.js",
+        "contentFiles/any/any/src/ts/generated/Messaging/CommonMessageConstants.js.map",
+        "contentFiles/any/any/src/ts/generated/Messaging/UiPathMessaging.js",
+        "contentFiles/any/any/src/ts/generated/Messaging/UiPathMessaging.js.map",
+        "contentFiles/any/any/src/ts/generated/SharedUtils.js",
+        "contentFiles/any/any/src/ts/generated/SharedUtils.js.map",
+        "contentFiles/any/any/src/ts/util/FormIoUtil.js",
+        "contentFiles/any/any/src/ts/util/FormIoUtil.js.map",
+        "lib/net6.0-windows7.0/UiPath.Studio.Forms.Runtime.dll",
+        "lib/net6.0-windows7.0/de/UiPath.Studio.Forms.Runtime.resources.dll",
+        "lib/net6.0-windows7.0/es-MX/UiPath.Studio.Forms.Runtime.resources.dll",
+        "lib/net6.0-windows7.0/es/UiPath.Studio.Forms.Runtime.resources.dll",
+        "lib/net6.0-windows7.0/fr/UiPath.Studio.Forms.Runtime.resources.dll",
+        "lib/net6.0-windows7.0/ja/UiPath.Studio.Forms.Runtime.resources.dll",
+        "lib/net6.0-windows7.0/ko/UiPath.Studio.Forms.Runtime.resources.dll",
+        "lib/net6.0-windows7.0/pt-BR/UiPath.Studio.Forms.Runtime.resources.dll",
+        "lib/net6.0-windows7.0/pt/UiPath.Studio.Forms.Runtime.resources.dll",
+        "lib/net6.0-windows7.0/ru/UiPath.Studio.Forms.Runtime.resources.dll",
+        "lib/net6.0-windows7.0/tr/UiPath.Studio.Forms.Runtime.resources.dll",
+        "lib/net6.0-windows7.0/zh-CN/UiPath.Studio.Forms.Runtime.resources.dll",
+        "lib/net6.0-windows7.0/zh-TW/UiPath.Studio.Forms.Runtime.resources.dll",
+        "lib/net6.0-windows7.0/zu/UiPath.Studio.Forms.Runtime.resources.dll",
+        "uipath.studio.forms.runtime.23.10.6.nupkg.sha512",
+        "uipath.studio.forms.runtime.nuspec"
       ]
     },
     "UiPath.System.Activities/23.10.6": {
@@ -19890,6 +20894,7 @@
     "": [],
     "net6.0-windows7.0": [
       "UiPath.Excel.Activities >= 2.22.3 <= 2.22.3",
+      "UiPath.Form.Activities >= 23.10.6 <= 23.10.6",
       "UiPath.IntegrationService.Activities >= 1.5.0 <= 1.5.0",
       "UiPath.System.Activities >= 23.10.6 <= 23.10.6",
       "UiPath.Testing.Activities >= 23.10.1 <= 23.10.1",
@@ -19918,6 +20923,11 @@
             "include": "Runtime",
             "target": "Package",
             "version": "[2.22.3, 2.22.3]"
+          },
+          "UiPath.Form.Activities": {
+            "include": "Runtime",
+            "target": "Package",
+            "version": "[23.10.6, 23.10.6]"
           },
           "UiPath.IntegrationService.Activities": {
             "include": "Runtime",

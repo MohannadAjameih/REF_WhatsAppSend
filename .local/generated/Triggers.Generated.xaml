@@ -1,12 +1,9 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="System_Get_PhoneNumber_Name" this:System_Get_PhoneNumber_Name.in_FilePath="E:\GitHub\RoboticEnterpriseFramework_Gti1\Data\Input\Phone Number.xlsx" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+﻿<Activity mc:Ignorable="sap sap2010" x:Class="System_Get_PhoneNumber_Name" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ufa="clr-namespace:UiPath.Forms.Activities;assembly=UiPath.Forms.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:upt="clr-namespace:UiPath.Platform.Triggers;assembly=UiPath.Platform" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_FilePath" Type="InArgument(x:String)" />
     <x:Property Name="out_dtContacts" Type="OutArgument(sd:DataTable)" />
+    <x:Property Name="TriggerEventArgs" Type="InArgument(ufa:TextTriggerEventArgs)" />
   </x:Members>
-  <VisualBasic.Settings>
-    <x:Null />
-  </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1219.2,782.4</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>System_Get_PhoneNumber_Name_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -108,25 +105,44 @@
       <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Platform</AssemblyReference>
       <AssemblyReference>UiPath.Forms.Activities</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
-      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="System_Get_PhoneNumber_Name" sap:VirtualizedContainerService.HintSize="449.6,717.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="System_Get_PhoneNumber_Name" sap:VirtualizedContainerService.HintSize="449.6,920" sap2010:WorkflowViewState.IdRef="Sequence_10">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="Sheet" />
+      <Variable x:TypeArguments="x:Boolean" Default="[false]" Name="StopTriggersVariable" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InputDialog OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="387.2,295.2" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Select Sheet: " Options="[{&quot;Group1&quot;, &quot;Group2&quot;}]" Title="Select Sheet">
-      <ui:InputDialog.Result>
-        <OutArgument x:TypeArguments="x:String">[Sheet]</OutArgument>
-      </ui:InputDialog.Result>
-    </ui:InputDialog>
-    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[out_dtContacts]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="387.2,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="[Sheet]" WorkbookPath="[in_FilePath]" />
-    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="387.2,142.4" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[out_dtContacts]" />
+    <Sequence sap2010:WorkflowViewState.IdRef="Generated_41">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Default="[&quot;0&quot;]" Name="BreakTriggerScopeVariableName" />
+      </Sequence.Variables>
+      <Sequence sap2010:WorkflowViewState.IdRef="Generated_32">
+        <upt:InterruptibleTriggerInitializer sap2010:WorkflowViewState.IdRef="Generated_23" />
+        <ui:TriggerScope sap2010:WorkflowViewState.IdRef="Generated_14" SchedulingMode="Sequential">
+          <ui:TriggerScope.Action>
+            <ActivityAction x:TypeArguments="ufa:TextTriggerEventArgs">
+              <ActivityAction.Argument>
+                <DelegateInArgument x:TypeArguments="ufa:TextTriggerEventArgs" Name="TriggerEventArgs" />
+              </ActivityAction.Argument>
+              <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="System1\System1_Get_PhoneNumber_Name.xaml - Invoke Workflow File" sap2010:WorkflowViewState.IdRef="Generated_06" UnSafe="False" WorkflowFileName="System1\System1_Get_PhoneNumber_Name.xaml">
+                <ui:InvokeWorkflowFile.Arguments>
+                  <InArgument x:TypeArguments="ufa:TextTriggerEventArgs" x:Key="TriggerEventArgs">[TriggerEventArgs]</InArgument>
+                </ui:InvokeWorkflowFile.Arguments>
+              </ui:InvokeWorkflowFile>
+            </ActivityAction>
+          </ui:TriggerScope.Action>
+          <ui:TriggerScope.Triggers>
+            <scg:List x:TypeArguments="Activity" Capacity="1">
+              <ufa:FormTriggerActivity x:TypeArguments="ufa:TextTriggerEventArgs" MessageId="{x:Null}" Tag="{x:Null}" DisplayName="Form Event Trigger" Enabled="True" Event="changed.selectedGroup" FormId="378a6b53-fb6c-4233-a415-803898624662" sap:VirtualizedContainerService.HintSize="387.2,162.4" sap2010:WorkflowViewState.IdRef="FormTriggerActivity`1_15" SchedulingMode="Sequential" TriggerId="dce95b28-8010-4e5f-9ac3-5172487af6fa" />
+            </scg:List>
+          </ui:TriggerScope.Triggers>
+        </ui:TriggerScope>
+      </Sequence>
+    </Sequence>
   </Sequence>
 </Activity>
