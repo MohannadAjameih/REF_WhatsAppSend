@@ -3,6 +3,7 @@
     <x:Property Name="in_FilePath" Type="InArgument(x:String)" />
     <x:Property Name="out_Name" Type="OutArgument(x:String)" />
     <x:Property Name="out_PhoneNumber" Type="InArgument(x:String)" />
+    <x:Property Name="out_dtContacts" Type="OutArgument(sd:DataTable)" />
   </x:Members>
   <this:System_Get_PhoneNumber_Name.out_PhoneNumber>
     <InArgument x:TypeArguments="x:String" />
@@ -100,16 +101,13 @@
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
   <Sequence DisplayName="System_Get_PhoneNumber_Name" sap:VirtualizedContainerService.HintSize="617.6,665.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
-    <Sequence.Variables>
-      <Variable x:TypeArguments="sd:DataTable" Name="dtContacts" />
-    </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[dtContacts]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="555.2,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="[in_FilePath]" />
-    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtContacts]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="555.2,425.6" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[out_dtContacts]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="555.2,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="[in_FilePath]" />
+    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[out_dtContacts]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="555.2,425.6" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
           <ActivityAction.Argument>
