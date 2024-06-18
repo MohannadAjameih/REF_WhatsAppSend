@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1219.2,890.4</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1219.2,624.8</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>System_Get_PhoneNumber_Name_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -101,6 +101,6 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[out_dtContacts]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="387.2,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Sheet1" WorkbookPath="Data\Input\Phone Number.xlsx" />
+    <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[out_dtContacts]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="387.2,88" sap2010:WorkflowViewState.IdRef="ReadRange_1" SheetName="Group1" WorkbookPath="Data\Input\Phone Number.xlsx" />
   </Sequence>
 </Activity>
