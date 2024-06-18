@@ -1,7 +1,7 @@
 {
-  "name": "RoboticEnterpriseFramework_Gti1",
+  "name": "REF_WhatsAppSend",
   "projectId": "4ea06ed1-932c-480c-9d50-8ceb3d6361a2",
-  "description": "Robotic Enterprise Framework",
+  "description": "Send Messages, Images & videos to your Contacts",
   "main": "Main.xaml",
   "dependencies": {
     "UiPath.Excel.Activities": "[2.22.3]",
