@@ -104,7 +104,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:InputDialog Label="{x:Null}" OptionsString="{x:Null}" Title="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="387.2,295.2" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Options="[{&quot;group1&quot;, &quot;group2&quot;}]">
+    <ui:InputDialog OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="387.2,295.2" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="[&quot;Select Sheet: Group1&quot; + Environment.NewLine + &quot;Group2&quot;]" Options="[{&quot;Group1&quot;, &quot;Group2&quot;}]" Title="Select Sheet">
       <ui:InputDialog.Result>
         <OutArgument x:TypeArguments="x:String">[Sheet]</OutArgument>
       </ui:InputDialog.Result>
